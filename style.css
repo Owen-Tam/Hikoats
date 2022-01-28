@@ -151,10 +151,11 @@ nav.nav-active {
 .nav-item:hover a {
   background-position: 100%;
   color: black;
+  cursor: pointer;
 }
-@media (max-width: 447px) {
+@media (max-width: 500px) {
   .nav-item a {
-    font-size: 9vw;
+    font-size: 7vw;
   }
 }
 .fake {
@@ -168,7 +169,7 @@ nav.nav-active {
   z-index: -2;
   width: 80vw;
   text-align: center;
-  top: 9%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -30%);
 }
@@ -609,11 +610,19 @@ footer li a {
   text-decoration: none;
   font-size: clamp(0.9rem, 2vw, 1.2rem);
 }
-
+footer li {
+  transition: transform 300ms, background 300ms;
+}
+footer li:hover {
+  transform: translateY(-0.5rem);
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 footer ul {
   display: flex;
   list-style: none;
-  gap: 2.5rem;
+  gap: clamp(1rem, 3vw, 2.5rem);
 }
 .copyright {
   text-align: center;
