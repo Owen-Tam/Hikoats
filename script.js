@@ -19,9 +19,3 @@ navButton.addEventListener("click", function () {
   nav.classList.toggle("nav-active");
   navButton.classList.toggle("nav-button-active");
 });
-const fake = document.querySelector(".fake");
-const real = document.querySelector("#section-about");
-window.addEventListener("resize", function () {
-  fake.style.minHeight = real.style.minHeight;
-  console.log("hi");
-});
