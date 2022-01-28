@@ -19,4 +19,5 @@ nav.classList.remove("nav-active");
 navButton.addEventListener("click", function () {
   nav.classList.toggle("nav-active");
   navButton.classList.toggle("nav-button-active");
+  alert("BUG FOUND");
 });
