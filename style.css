@@ -108,6 +108,7 @@ nav {
   display: grid;
   place-items: center;
   position: fixed;
+  opacity: 0;
   /* background: #a1ffce; 
   background: -webkit-linear-gradient(
     to right,
@@ -563,6 +564,11 @@ nav.nav-active {
   #section-contact h2 {
     font-size: clamp(2.5rem, 4vw, 3rem);
     text-align: center;
+  }
+}
+@media (max-width: 1081px) {
+  .contact-box {
+    padding: 2rem;
   }
 }
 /*
