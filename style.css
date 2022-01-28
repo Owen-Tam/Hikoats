@@ -112,19 +112,19 @@ nav {
   display: grid;
   place-items: center;
   position: fixed;
-  background: #a1ffce; /* fallback for old browsers */
+  /* background: #a1ffce; 
   background: -webkit-linear-gradient(
     to right,
     #faffd1,
     #a1ffce
-  ); /* Chrome 10-25, Safari 5.1-6 */
+  );  */
   background: var(
     --gradient
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 nav.nav-active {
-  clip-path: circle(1500px at 94.3% 8.5%);
-  -webkit-clip-path: circle(1500px at 94.3% 8.5%);
+  clip-path: circle(2000px at 94.3% 8.5%);
+  -webkit-clip-path: circle(2000px at 94.3% 8.5%);
 }
 .navbar {
   list-style: none;
