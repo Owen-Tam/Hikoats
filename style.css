@@ -555,7 +555,7 @@ nav.nav-active {
   .contact-box {
     clip-path: none;
     width: 100%;
-    padding: 4rem;
+    padding: 20vw;
   }
   .contact-box input[name="name"],
   .contact-box input[name="email"] {
