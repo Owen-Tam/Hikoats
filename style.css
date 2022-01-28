@@ -344,23 +344,20 @@ nav.nav-active {
 #section-hikes .card .text h2 {
   font-size: clamp(2rem, 4vw, 3rem);
 }
-#section-hikes .card:nth-child(1) h2::before {
-  content: "01";
+#section-hikes .card h2::before {
+  content: "";
   position: absolute;
   font-size: 2rem;
-  top: 30%;
+  top: 29%;
+}
+#section-hikes .card:nth-child(1) h2::before {
+  content: "01";
 }
 #section-hikes .card:nth-child(2) h2::before {
   content: "02";
-  position: absolute;
-  font-size: 2rem;
-  top: 30%;
 }
 #section-hikes .card:nth-child(3) h2::before {
   content: "03";
-  position: absolute;
-  font-size: 2rem;
-  top: 30%;
 }
 #section-hikes .container3 {
   padding-inline: 10vw;
@@ -451,6 +448,20 @@ nav.nav-active {
   #section-hikes .card:not(:nth-child(3)) {
     border-right: none;
     border-bottom: solid 1px gray;
+  }
+}
+@media (max-width: 470px) {
+  #section-hikes .card:nth-child(1) h2::before {
+    content: "01";
+    top: 21%;
+  }
+  #section-hikes .card:nth-child(2) h2::before {
+    content: "02";
+    top: 21%;
+  }
+  #section-hikes .card:nth-child(3) h2::before {
+    content: "03";
+    top: 21%;
   }
 }
 #section-contact {
