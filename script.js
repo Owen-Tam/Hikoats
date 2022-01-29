@@ -38,5 +38,5 @@ const loader = document.querySelector(".loader");
 window.addEventListener("load", function () {
   this.setTimeout(function () {
     loader.classList.add("finish");
-  }, 1500);
+  }, 2000);
 });
