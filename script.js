@@ -7,7 +7,7 @@ timeline
   .to("#section-about", 3, { top: "0%" }, "-=3");
 let scene = new ScrollMagic.Scene({
   triggerElement: ".all",
-  duration: "110%",
+  duration: "100%",
   triggerHook: 0,
 })
   .setTween(timeline)
@@ -38,5 +38,5 @@ const loader = document.querySelector(".loader");
 window.addEventListener("load", function () {
   this.setTimeout(function () {
     loader.classList.add("finish");
-  }, 2200);
+  }, 2000);
 });

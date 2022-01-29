@@ -346,12 +346,12 @@ nav.nav-active {
   -webkit-text-fill-color: transparent; */
 }
 #section-hikes .card .text h2 {
-  font-size: clamp(2rem, 4vw, 3rem);
+  font-size: clamp(1.5rem, 6vw, 3rem);
 }
 #section-hikes .card h2::before {
   content: "";
   position: absolute;
-  font-size: 2rem;
+  font-size: clamp(1.3rem, 6vw, 2rem);
   top: 29%;
 }
 #section-hikes .card:nth-child(1) h2::before {
@@ -468,6 +468,23 @@ nav.nav-active {
     top: 21%;
   }
 }
+@media (max-width: 345px) {
+  #section-hikes .card {
+    padding: 1rem;
+  }
+  #section-hikes .card:nth-child(1) h2::before {
+    content: "01";
+    top: 15%;
+  }
+  #section-hikes .card:nth-child(2) h2::before {
+    content: "02";
+    top: 15%;
+  }
+  #section-hikes .card:nth-child(3) h2::before {
+    content: "03";
+    top: 15%;
+  }
+}
 #section-contact {
   margin-block: 6rem;
   padding: 4vw 10vw 5vw 10vw;
@@ -569,13 +586,13 @@ nav.nav-active {
     width: 40vw;
   }
   #section-contact h2 {
-    font-size: clamp(2.5rem, 4vw, 3rem);
+    font-size: clamp(2rem, 4vw, 3rem);
     text-align: center;
   }
 }
 @media (max-width: 1081px) {
   .contact-box {
-    padding: 2rem;
+    padding: 2.5rem;
   }
 }
 /*
@@ -664,6 +681,13 @@ footer ul {
   z-index: 12;
   background: white;
   transition: transform 900ms;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.loader-container {
+  height: 280px;
 }
 .loader svg {
   position: absolute;
@@ -693,4 +717,9 @@ footer ul {
 .finish {
   transform: translateY(-100vh);
   pointer-events: none;
+}
+@media (max-height: 767px) {
+  .loader h2 {
+    display: none;
+  }
 }
