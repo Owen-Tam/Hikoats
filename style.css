@@ -261,9 +261,7 @@ nav.nav-active {
   }
 
   .col1 img {
-    width: 200px;
-    -webkit-box-shadow: 0px 0px 18px 10px rgba(0, 0, 0, 0.05);
-    box-shadow: 0px 0px 18px 10px rgba(0, 0, 0, 0.05);
+    display: none;
   }
 }
 @media (max-width: 591px) {
@@ -658,4 +656,41 @@ footer ul {
   .container5 ul {
     justify-content: center;
   }
+}
+.loader {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 12;
+  background: white;
+  transition: transform 900ms;
+}
+.loader svg {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 300px;
+}
+.loader h2 {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-55%, -50%);
+  font-size: 3rem;
+}
+.path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 5s linear forwards;
+}
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+.finish {
+  transform: translateY(-100vh);
+  pointer-events: none;
 }
