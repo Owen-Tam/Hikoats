@@ -191,7 +191,7 @@ nav.nav-active {
 }
 .cont-cont {
   display: grid;
-  margin-top: 3rem;
+  margin-top: 5rem;
   align-items: flex-start;
   grid-template-columns: 3fr 3fr;
   gap: 5vw;
@@ -246,6 +246,13 @@ nav.nav-active {
   .col1 {
     height: auto;
   }
+  .cont-cont {
+    display: grid;
+    margin-top: 5rem;
+    align-items: flex-start;
+    grid-template-columns: 3fr 3fr;
+    gap: 5vw;
+  }
 }
 @media (max-width: 750px) {
   .cont-cont {
@@ -276,10 +283,12 @@ nav.nav-active {
   background: rgb(245, 245, 245);
   position: relative;
   z-index: 3;
+  margin-top: 6vw;
 }
 
 #section-hikes .section-title {
   margin-bottom: 1rem;
+  padding-top: 1rem;
 }
 #section-hikes .card {
   background: white;
@@ -386,7 +395,7 @@ nav.nav-active {
 #section-hikes .card:hover .text {
   color: white;
 }
-@media (max-width: 630px) {
+@media (max-width: 650px) {
   #section-hikes {
     margin-top: 60vh;
   }
